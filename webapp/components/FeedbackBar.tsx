@@ -50,21 +50,29 @@ export default function FeedbackBar({ slug }: { slug: string }) {
   };
 
   return (
-    <div className="feedback-bar">
-      <button
-        className={`feedback-btn like ${mine === 'like' ? 'active' : ''}`}
-        onClick={() => submit('like')}
-        disabled={loading}
-      >
-        👍 刺さった ({counts.likes})
-      </button>
-      <button
-        className={`feedback-btn dislike ${mine === 'dislike' ? 'active' : ''}`}
-        onClick={() => submit('dislike')}
-        disabled={loading}
-      >
-        👎 違った ({counts.dislikes})
-      </button>
+    <div style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--border)' }}>
+      <div style={{ fontSize: 11, letterSpacing: '0.08em', color: 'var(--muted)', marginBottom: 10, textTransform: 'uppercase' }}>
+        この記事のフィードバック
+      </div>
+      <div style={{ display: 'flex', gap: 8 }}>
+        <button
+          className={`btn like ${mine === 'like' ? 'active' : ''}`}
+          onClick={() => submit('like')}
+          disabled={loading}
+        >
+          👍 刺さった ({counts.likes})
+        </button>
+        <button
+          className={`btn dislike ${mine === 'dislike' ? 'active' : ''}`}
+          onClick={() => submit('dislike')}
+          disabled={loading}
+        >
+          👎 違った ({counts.dislikes})
+        </button>
+      </div>
+      <div style={{ fontSize: 11, color: 'var(--muted-2)', marginTop: 8 }}>
+        フィードバックは次回の巡回で「先輩に刺さるポイント」の精度向上に使います
+      </div>
     </div>
   );
 }

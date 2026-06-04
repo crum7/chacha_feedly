@@ -9,17 +9,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body>
-        <header className="site-header">
-          <a href="/" className="brand">chacha_feedly</a>
-          <nav>
-            <a href="/">すべて</a>
-            <a href="/?kind=feed">フィード</a>
-            <a href="/?kind=series">HackTricks連載</a>
-          </nav>
-        </header>
-        <main>{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
