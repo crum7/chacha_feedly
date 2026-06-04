@@ -1,5 +1,17 @@
 {
-  "last_patrol": null,
-  "processed_urls": {},
+  "last_patrol": "2026-06-04T09:00:00Z",
+  "processed_urls": {
+    "https://www.security-next.com/185385": "2026-06-04T09:00:00Z",
+    "https://www.security-next.com/185392": "2026-06-04T09:00:00Z",
+    "https://www.antiphishing.jp/news/info/press_phishing_report2026.html": "2026-06-04T09:00:00Z",
+    "https://www.lac.co.jp/lacwatch/alert/20260603_004758.html": "2026-06-04T09:00:00Z",
+    "https://piyolog.hatenadiary.jp/entry/2025/12/08/113316": "2026-06-04T09:00:00Z",
+    "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025": "2026-06-04T09:00:00Z",
+    "https://portswigger.net/research/the-fragile-lock": "2026-06-04T09:00:00Z",
+    "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-05-29-2026": "2026-06-04T09:00:00Z",
+    "https://www.darknet.org.uk/2026/03/mssqland-lightweight-ms-sql-interaction-tool-for-lateral-movement-and-post-exploitation/": "2026-06-04T09:00:00Z",
+    "https://darknetdiaries.com/episode/175/": "2026-06-04T09:00:00Z",
+    "https://hackerone.com/reports/3653196": "2026-06-04T09:00:00Z"
+  },
   "feedback": {}
 }
