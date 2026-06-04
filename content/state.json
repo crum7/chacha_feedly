@@ -1,6 +1,14 @@
 {
-  "last_patrol": "2026-06-04T10:00:00Z",
+  "last_patrol": "2026-06-04T12:23:00Z",
   "processed_urls": {
+    "https://hackerone.com/reports/3650504": "2026-06-04T12:23:00Z",
+    "https://hackerone.com/reports/3650582": "2026-06-04T12:23:00Z",
+    "https://hackerone.com/reports/3653316": "2026-06-04T12:23:00Z",
+    "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-05-08-2026": "2026-06-04T12:23:00Z",
+    "https://www.darknet.org.uk/2025/11/systemic-ransomware-events-in-2025-how-jaguar-land-rover-showed-what-a-category-3-supply-chain-breach-looks-like/": "2026-06-04T12:23:00Z",
+    "https://www.darknet.org.uk/2025/11/smbcrawler-smb-share-discovery-and-secret-hunting/": "2026-06-04T12:23:00Z",
+    "https://darknetdiaries.com/episode/172/": "2026-06-04T12:23:00Z",
+    "https://darknetdiaries.com/episode/171/": "2026-06-04T12:23:00Z",
     "https://cybersecurity-jp.com/news/113764": "2026-06-04T10:00:00Z",
     "https://cybersecurity-jp.com/news/113781": "2026-06-04T10:00:00Z",
     "https://cybersecurity-jp.com/news/113783": "2026-06-04T10:00:00Z",
