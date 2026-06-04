@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 type Props = {
   counts: { all: number; feed: number; series: number; bySource: Record<string, number> };
@@ -43,6 +44,11 @@ export default function Sidebar({ counts, sources, activeKind, activeSource }: P
           <span className="count">{counts.bySource[s]}</span>
         </Link>
       ))}
+
+      <div className="sidebar-footer">
+        <span>テーマ</span>
+        <ThemeToggle />
+      </div>
     </aside>
   );
 }

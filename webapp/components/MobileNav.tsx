@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import ThemeToggle from './ThemeToggle';
 
 type Props = {
   title?: string;
@@ -53,7 +54,7 @@ export default function MobileNav({ title = 'chacha_feedly', showBack = false }:
           </button>
         )}
         <div className="mobile-nav-title">{title}</div>
-        <div style={{ width: 40 }} />
+        <ThemeToggle />
       </header>
       {open && <div className="drawer-backdrop" onClick={() => setOpen(false)} />}
     </>
