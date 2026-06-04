@@ -323,15 +323,120 @@ button { font-family: inherit; }
 .reader-body ul, .reader-body ol { padding-left: 24px; }
 .reader-body li { margin: 4px 0; }
 
-/* レスポンシブ：スマホでは縦並びに */
+/* モバイル用ナビゲーション（デスクトップでは非表示） */
+.mobile-nav { display: none; }
+.drawer-backdrop { display: none; }
+
+/* === タブレット：list-w 縮める === */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  :root { --sidebar-w: 220px; --list-w: 340px; }
+}
+
+/* === モバイル＆タブレット：ドロワー＋ビュー切り替え === */
 @media (max-width: 1024px) {
+  body { font-size: 15px; }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 12px;
+    height: 52px;
+  }
+  .mobile-nav-btn {
+    background: transparent;
+    border: 1px solid var(--border-2);
+    color: var(--fg);
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .mobile-nav-btn:active { background: var(--bg-3); }
+  .mobile-nav-title {
+    font-size: 15px;
+    font-weight: 600;
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
+
   .app {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: block;
     height: auto;
     min-height: 100vh;
+    overflow: visible;
   }
-  .sidebar { border-right: none; border-bottom: 1px solid var(--border); max-height: none; }
-  .article-list { border-right: none; border-bottom: 1px solid var(--border); }
-  .reader-inner { padding: 24px 18px 60px; }
+
+  /* サイドバーはドロワー化 */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 78%;
+    max-width: 320px;
+    height: 100vh;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.22s ease;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+    border-right: 1px solid var(--border);
+    padding-top: 16px;
+  }
+  .sidebar--open { transform: translateX(0); }
+  .sidebar-item { padding: 12px 20px; font-size: 14px; }
+
+  .drawer-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 150;
+  }
+
+  /* デフォルト（一覧ページ）：記事リストだけ全画面 */
+  .article-list {
+    border-right: none;
+    border-bottom: none;
+  }
+  .list-header { padding: 14px 16px; }
+  .list-item { padding: 16px 16px; }
+  .list-item-title { font-size: 15px; }
+
+  /* 一覧ページのとき .reader は空表示で邪魔 → 非表示 */
+  .app:not(.app--reader-page) .reader {
+    display: none;
+  }
+
+  /* 記事ページのとき：サイドバー（ドロワー）以外、記事リスト非表示、リーダーだけ表示 */
+  .app--reader-page .article-list {
+    display: none;
+  }
+  .app--reader-page .reader {
+    display: block;
+  }
+
+  .reader-inner { padding: 20px 16px 80px; max-width: 100%; }
+  .reader h1 { font-size: 22px; }
+  .reader-body { font-size: 15px; }
+  .reader-body h2 { font-size: 18px; }
+  .reader-body h3 { font-size: 15px; }
+  .reader-body pre { font-size: 12px; padding: 12px; }
+
+  .btn { padding: 10px 14px; font-size: 14px; }
+  .reader-actions { gap: 8px; }
 }
+

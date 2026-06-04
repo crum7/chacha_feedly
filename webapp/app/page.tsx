@@ -2,6 +2,7 @@ import { getAllArticles } from '@/lib/articles';
 import Sidebar from '@/components/Sidebar';
 import ArticleList from '@/components/ArticleList';
 import EmptyReader from '@/components/EmptyReader';
+import MobileNav from '@/components/MobileNav';
 
 export const dynamic = 'force-dynamic';
 
@@ -35,17 +36,20 @@ export default async function Home({
   if (sp.source) title = sp.source;
 
   return (
-    <div className="app">
-      <Sidebar
-        counts={counts}
-        sources={sources}
-        activeKind={sp.kind}
-        activeSource={sp.source}
-      />
-      <ArticleList articles={filtered} title={title} />
-      <div className="reader">
-        <EmptyReader count={filtered.length} />
+    <>
+      <MobileNav title={title} />
+      <div className="app">
+        <Sidebar
+          counts={counts}
+          sources={sources}
+          activeKind={sp.kind}
+          activeSource={sp.source}
+        />
+        <ArticleList articles={filtered} title={title} />
+        <div className="reader">
+          <EmptyReader count={filtered.length} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

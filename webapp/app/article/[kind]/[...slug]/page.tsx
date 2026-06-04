@@ -6,6 +6,7 @@ import rehypeRaw from 'rehype-raw';
 import Sidebar from '@/components/Sidebar';
 import ArticleList from '@/components/ArticleList';
 import FeedbackBar from '@/components/FeedbackBar';
+import MobileNav from '@/components/MobileNav';
 
 export const dynamic = 'force-dynamic';
 
@@ -33,8 +34,10 @@ export default async function ArticlePage({
   };
 
   return (
-    <div className="app">
-      <Sidebar counts={counts} sources={sources} activeSource={article.source} />
+    <>
+      <MobileNav title={article.title} showBack />
+      <div className="app app--reader-page">
+        <Sidebar counts={counts} sources={sources} activeSource={article.source} />
       <ArticleList articles={all} title="すべての記事" />
       <div className="reader">
         <article className="reader-inner">
@@ -85,6 +88,7 @@ export default async function ArticlePage({
           <FeedbackBar slug={`${article.kind}/${article.slug}`} />
         </article>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
