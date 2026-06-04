@@ -9,13 +9,14 @@ import FeedbackBar from '@/components/FeedbackBar';
 
 export const dynamic = 'force-dynamic';
 
-export default function ArticlePage({
+export default async function ArticlePage({
   params,
 }: {
-  params: { kind: string; slug: string[] };
+  params: Promise<{ kind: string; slug: string[] }>;
 }) {
-  const kind = params.kind === 'series' ? 'series' : 'feed';
-  const slug = params.slug.join('/');
+  const { kind: kindParam, slug: slugParam } = await params;
+  const kind = kindParam === 'series' ? 'series' : 'feed';
+  const slug = slugParam.join('/');
   const article = getArticleBySlug(kind, slug);
   if (!article) notFound();
 

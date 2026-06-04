@@ -5,12 +5,17 @@ import EmptyReader from '@/components/EmptyReader';
 
 export const dynamic = 'force-dynamic';
 
-export default function Home({ searchParams }: { searchParams: { source?: string; kind?: string } }) {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ source?: string; kind?: string }>;
+}) {
+  const sp = await searchParams;
   const all = getAllArticles();
   const sources = Array.from(new Set(all.map((a) => a.source))).sort();
   const filtered = all.filter((a) => {
-    if (searchParams.kind && a.kind !== searchParams.kind) return false;
-    if (searchParams.source && a.source !== searchParams.source) return false;
+    if (sp.kind && a.kind !== sp.kind) return false;
+    if (sp.source && a.source !== sp.source) return false;
     return true;
   });
 
@@ -25,17 +30,17 @@ export default function Home({ searchParams }: { searchParams: { source?: string
   };
 
   let title = 'すべての記事';
-  if (searchParams.kind === 'series') title = 'HackTricks 連載';
-  else if (searchParams.kind === 'feed') title = 'フィード（巡回）';
-  if (searchParams.source) title = searchParams.source;
+  if (sp.kind === 'series') title = 'HackTricks 連載';
+  else if (sp.kind === 'feed') title = 'フィード（巡回）';
+  if (sp.source) title = sp.source;
 
   return (
     <div className="app">
       <Sidebar
         counts={counts}
         sources={sources}
-        activeKind={searchParams.kind}
-        activeSource={searchParams.source}
+        activeKind={sp.kind}
+        activeSource={sp.source}
       />
       <ArticleList articles={filtered} title={title} />
       <div className="reader">
