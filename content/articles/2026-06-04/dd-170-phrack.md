@@ -4,7 +4,7 @@ source: "Darknet Diaries"
 source_url: "https://darknetdiaries.com/episode/170/"
 published_at: "2026-02-03T08:00:00Z"
 summary: "1985年から続く世界最古・最も権威あるアングラハッキングマガジンPhrackの編集チームへインタビュー。"
-hits: "セキュリティ文化のルーツ。技術コミュニティ評価を得始めた先輩のコンテキストづくりに最適な教養。"
+hits: "Podcast形式で攻撃者エコシステムを俯瞰できる定点観測ソース。"
 category: "Podcast"
 ---
 

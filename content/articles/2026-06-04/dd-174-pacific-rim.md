@@ -3,8 +3,8 @@ title: "Darknet Diaries 174: Pacific Rim（Sophosのファイアウォール戦�
 source: "Darknet Diaries"
 source_url: "https://darknetdiaries.com/episode/174/"
 published_at: "2026-05-05T07:00:00Z"
-summary: "Sophosが6年間にわたり、自社ファイアウォールを標的とした国家系ハッキンググループと秘密の攻防を続けた経緯。Sophosは戦術を大胆に転換した。"
-hits: "ベンダー視点の長期防衛戦のリアル。Smoothもサプライヤーとして同じ覚悟を求められる時が来る、という材料。"
+summary: "Sophosが6年間にわたり、同社ファイアウォールを標的とした国家系ハッキンググループと秘密の攻防を続けた経緯。Sophosは戦術を大胆に転換した。"
+hits: "Podcast形式で攻撃者エコシステムを俯瞰できる定点観測ソース。"
 category: "Podcast"
 ---
 

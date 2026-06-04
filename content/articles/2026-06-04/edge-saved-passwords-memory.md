@@ -4,7 +4,7 @@ source: "0day Fans / Microsoft Edge Team"
 source_url: "https://microsoftedge.github.io/edgevr/posts/Saved-passwords-in-Edge-memory-what-were-changing-and-why/"
 published_at: "2026-05-14T07:00:33Z"
 summary: "ブラウザがメモリ内で保存パスワードを保持する時間と窓を減らす方向にEdgeが設計を改善した経緯と理由。"
-hits: "InfostealerがLSASS/ブラウザメモリを狙う流れの最新カウンター。SmoothのBYOD端末でブラウザの選択肢提示の材料に。"
+hits: "ブラウザ実装の脆弱性事例。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smoothで使う端末でEdge最新化推奨を流す
+- 業務端末でEdge最新化推奨を流す
 - パスワードマネージャ方針再確認
 
 ---

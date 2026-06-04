@@ -4,7 +4,7 @@ source: "Security NEXT"
 source_url: "https://www.security-next.com/184950"
 published_at: "2026-06-03T11:25:08Z"
 summary: "沖縄県が企業向けに一斉送信したメールに名簿ファイルを誤って添付し、個人情報が外部に流出した。古典的だが今も繰り返されるヒューマンエラー型インシデント。"
-hits: "Smoothの一斉送信系（営業メール、CS通知）にも同じ穴。先輩がCISOとしてBCC/添付の自動チェックを入れる根拠に。"
+hits: "国内情報漏洩インシデントの事例。"
 category: "Security"
 ---
 

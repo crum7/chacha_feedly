@@ -4,7 +4,7 @@ source: "HackerOne"
 source_url: "https://hackerone.com/reports/3669623"
 published_at: ""
 summary: "ユーザログのメール項目に表示されるFull Name欄を悪用したStored XSSの報告。"
-hits: "ユーザ表示名→管理画面コンテキストでXSSはSmoothの管理画面（社内ツール）でも刺さりうる。設計時のサニタイズチェック観点。"
+hits: "XSS研究の最新事例。実装側のレビュー観点として。"
 category: "Security"
 ---
 

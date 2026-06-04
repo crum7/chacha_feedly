@@ -4,7 +4,7 @@ source: "Darknet – Hacking Tools, Hacker News & Cyber Security"
 source_url: "https://www.darknet.org.uk/2025/11/systemic-ransomware-events-in-2025-how-jaguar-land-rover-showed-what-a-category-3-supply-chain-breach-looks-like/"
 published_at: "2025-11-26T01:00:00Z"
 summary: "JLR の長期生産停止を題材に、サプライチェーンを介して業界横断に波及するランサム被害の分類（Category 3）を解説する記事。Toyota / Nissan / Ferrari の過去事例とも比較。"
-hits: "セキュキャン専門B の B6（サプライチェーン）の事前学習にドンピシャ。Smoothの取引先・委託先が止まったときの自社への波及シナリオを考える材料にもなる。"
+hits: "サプライチェーンリスクの典型ケーススタディ。"
 category: "Security"
 ---
 
@@ -15,8 +15,8 @@ category: "Security"
 
 ## アクション提案
 
-- Smoothの主要取引先・委託先がランサムで止まったときの初動を1ページで言語化
-- セキュキャン B6 の事前ノートに『JLR ケース』を1セクション
+- 主要取引先・委託先がランサムで止まったときの初動を1ページで言語化
+- 業界カンファレンス 関連トラック の事前ノートに『JLR ケース』を1セクション
 
 ---
 *詳細は[元記事](https://www.darknet.org.uk/2025/11/systemic-ransomware-events-in-2025-how-jaguar-land-rover-showed-what-a-category-3-supply-chain-breach-looks-like/)を参照してください。*

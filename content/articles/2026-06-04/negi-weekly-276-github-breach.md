@@ -4,7 +4,7 @@ source: "セキュリティは楽しいかね？ Part 2"
 source_url: "https://negi.hatenablog.com/entry/2026/05/24/205951"
 published_at: "2026-05-24T11:59:51Z"
 summary: "GitHubで不正アクセスがあり内部リポジトリ情報が漏洩、Kimwolfボットネット運営者逮捕、欧州法執行機関による犯罪向けVPN摘発、npmサプライチェーン攻撃など。"
-hits: "Smoothのソースコード保管先＝GitHub。Organization設定のMFA強制やSAML/SCIM運用の点検タイミング。"
+hits: "週次セキュリティニュースまとめ。定点観測ソース。"
 category: "Security"
 ---
 

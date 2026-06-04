@@ -4,7 +4,7 @@ source: "Darknet"
 source_url: "https://www.darknet.org.uk/2026/03/dumpbrowsersecrets-browser-credential-harvesting-with-app-bound-encryption-bypass/"
 published_at: "2026-03-09T01:00:00Z"
 summary: "Chrome/Edge/Firefox/Opera/Vivaldi等から、保存パスワード・Cookie・OAuthトークン・自動入力データを、Early Bird APC injectionでApp-Bound Encryptionをバイパスして抜き取るツール。"
-hits: "ChromeのABE回避は2025-26年Infostealerの主戦場。OSCP/赤チーム視点のラボ題材として価値最大。Smoothの端末セキュリティ要件議論の材料にも。"
+hits: "ブラウザ保存クレデンシャル窃取ツールの最新動向。BYOD/EDR運用の参考に。"
 category: "Security"
 ---
 

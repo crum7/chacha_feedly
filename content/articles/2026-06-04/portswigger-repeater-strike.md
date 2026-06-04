@@ -4,7 +4,7 @@ source: "PortSwigger Research"
 source_url: "https://portswigger.net/research/repeater-strike-manual-testing-amplified"
 published_at: "2025-07-15T13:46:37Z"
 summary: "BurpのRepeaterタブを起点に、AIでIDOR系バグの探索を自動化する新Burp拡張Repeater Strikeの紹介。"
-hits: "Burp Pro運用中＆AIエージェント研究中の先輩にドンピシャ。Smooth Pentest AgentのIDOR検出戦略にも応用可能。"
+hits: "Webセキュリティ研究の最先端。次年度に実戦で使われる手法の予習に。"
 category: "Security"
 ---
 

@@ -4,7 +4,7 @@ source: "PortSwigger Research"
 source_url: "https://portswigger.net/research/websocket-turbo-intruder-unearthing-the-websocket-goldmine"
 published_at: "2025-09-17T12:40:06Z"
 summary: "プロトコルがWebSocketに切り替わると検査をやめてしまうツール・テスターが多いという盲点を埋めるWebSocket Turbo Intruderの紹介。Broken Access ControlやRaceなど未踏のバグが眠る領域。"
-hits: "Smoothのリアルタイム系（Slack通知ボット、駐車場状態同期）でWebSocket増えていくならテスト手法を抑えておきたい。"
+hits: "WebSocket周辺の研究動向。リアルタイム通信実装の参考に。"
 category: "Security"
 ---
 

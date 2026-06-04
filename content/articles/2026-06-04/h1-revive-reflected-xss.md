@@ -4,7 +4,7 @@ source: "HackerOne Hacker Activity"
 source_url: "https://hackerone.com/reports/3653316"
 published_at: "2026-06-04T11:00:00Z"
 summary: "Revive Adserverの同じエンドポイント (zone-include.php) のclientidパラメータでReflected XSSが報告された。同じ箇所にBlind SQLiも別レポートで報告済み。"
-hits: "1つのパラメータに複数の脆弱性が同時に存在するパターン。入力検証が全く効いていないことを示す典型例で、OSCPの試験でも『1箇所怪しいと感じたら徹底的に試す』の教材になる。"
+hits: "XSS研究の最新事例。実装側のレビュー観点として。"
 category: "Security"
 ---
 

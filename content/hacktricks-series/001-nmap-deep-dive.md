@@ -4,7 +4,7 @@ source: "chacha_feedly オリジナル連載"
 source_url: "https://book.hacktricks.wiki/"
 published_at: "2026-06-04T08:00:00Z"
 summary: "OSCP本番ではNmapに何分使うかでクリア可否が決まる。Top1000で見落とすポート、スクリプトの選び方、回避とノイズ削減まで、Phase 1のEasy Linuxを安定して落とすための実戦テクを整理する。"
-hits: "先輩のCVE-2025-59152は『リバプロ越しの偽装ヘッダ』を見つけた話で、Nmapの-A／-sCで吐かれるバナーから違和感を拾う感性と同根。SmoothのIoT機器（H.VIEW）でShodan/FOFAから候補を絞った調査も、結局は『どのポートが何を喋ってるか』の解像度で勝負が決まる。OSCPはここを30分で終わらせて本番に時間を残せるかどうか。"
+hits: "Nmapの基本テク整理。実機検証で初動を固定化したい人向け。"
 category: "Security"
 ---
 
@@ -58,10 +58,10 @@ nmap --script vuln -p 80,443 10.10.10.X
 
 ## 4. バナーから違和感を拾う
 
-これは**先輩のCVE実績と同根の感性**。`-sV` の出力で:
+これは**バナーから違和感を拾う感性**。`-sV` の出力で:
 
 - バージョン番号が異常に古い（vsftpd 2.3.4 → 即バックドア確定）
-- レスポンスヘッダのServerが妙にカスタム（`IPC/2.0.0 openSSL/openSSL0.9.8` ← H.VIEWパターン）
+- レスポンスヘッダのServerが妙にカスタム（`特定バナー` ← IoT機器でよくあるパターン）
 - HTTPS証明書のCNが内部名（vhost候補）
 - SSH banner にディストロ名（Debian-1ubuntu0.X → カーネルエクスプロイト候補）
 
@@ -85,7 +85,7 @@ nmap --source-port 53 target
 nmap -T1 --scan-delay 5s target
 ```
 
-OSCPでは `-T4` 全開でOK。本番Pentestや先輩のSmooth Pentest Agentでは制御したい場面が来るはず。
+OSCPでは `-T4` 全開でOK。本番Pentestや脆弱性スキャナでは制御したい場面が来るはず。
 
 ## 6. 出力フォーマット使い分け
 

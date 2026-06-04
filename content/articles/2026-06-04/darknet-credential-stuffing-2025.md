@@ -4,7 +4,7 @@ source: "Darknet"
 source_url: "https://www.darknet.org.uk/2026/03/credential-stuffing-in-2025-how-combolists-infostealers-and-account-takeover-became-an-industry/"
 published_at: "2026-03-11T01:00:00Z"
 summary: "2025年は全侵害の22%がクレデンシャルスタッフィング起因。Combolist、Infostealer、ATOツーリングが企業向けに『産業化』した現状の分析。"
-hits: "Smooth Pay/管理画面の認証境界の重要性を経営層に説明するときの数字として使える。MFA強制とBot対策ロードマップの根拠。"
+hits: "クレデンシャルスタッフィング動向の定点観測。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smoothのログインエンドポイントへのbot対策再点検
+- ログインエンドポイントへのbot対策再点検
 - ユーザー側パスワード強度警告UIの追加検討
 
 ---

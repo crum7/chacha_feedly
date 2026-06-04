@@ -4,7 +4,7 @@ source: "Darknet Diaries"
 source_url: "https://darknetdiaries.com/episode/169/"
 published_at: "2026-01-20T08:00:00Z"
 summary: "Legion of Doomのライバルとして80-90年代に台頭した新世代ハッカー集団 Masters of Deception の話。"
-hits: "Phrack回とセットで聴くと文化的に厚みが出る。"
+hits: "Podcast形式で攻撃者エコシステムを俯瞰できる定点観測ソース。"
 category: "Podcast"
 ---
 

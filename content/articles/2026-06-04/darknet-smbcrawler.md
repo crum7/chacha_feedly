@@ -4,7 +4,7 @@ source: "Darknet – Hacking Tools, Hacker News & Cyber Security"
 source_url: "https://www.darknet.org.uk/2025/11/smbcrawler-smb-share-discovery-and-secret-hunting/"
 published_at: "2025-11-24T01:00:00Z"
 summary: "Red Team 向けの SMB シェアクローラ。設定ミスの共有を見つけ、Windows ネットワーク上の秘匿情報を探索する用途。"
-hits: "OSCP Phase 3 (AD週) で SMB 列挙を手動でやる時の上位互換ツール。HTB のADマシンで『なんかSMBに転がってる』系のクレデンシャル拾いを効率化できる。"
+hits: "Red Team向けSMB列挙ツール。AD環境の評価で参考になる。"
 category: "Security"
 ---
 

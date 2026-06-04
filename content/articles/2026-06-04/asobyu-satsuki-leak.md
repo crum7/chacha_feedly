@@ -4,7 +4,7 @@ source: "サイバーセキュリティ.com"
 source_url: "https://cybersecurity-jp.com/news/113781"
 published_at: "2026-06-04T01:29:43Z"
 summary: "アソビューが提供するアクティビティ事業者向け予約管理システム『satsuki』へのサイバー攻撃により、パートナー事業者情報の一部約1万4千件が流出した。"
-hits: "Smoothもtenantを大量に抱えるBtoB SaaS構造。同じ『パートナー情報流出』はSmoothでも起きうる。テナント分離設計レビュー材料。"
+hits: "国内情報漏洩インシデントの事例。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smoothのtenant情報アクセス制御の棚卸し
+- 組織情報アクセス制御の棚卸し
 - パートナー向け広報テンプレ素材として保管
 
 ---

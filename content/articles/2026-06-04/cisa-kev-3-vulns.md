@@ -4,7 +4,7 @@ source: "Security NEXT"
 source_url: "https://www.security-next.com/185392"
 published_at: "2026-06-04T00:20:46Z"
 summary: "米CISAが Known Exploited Vulnerabilities (KEV) カタログに3件を追加し、Linuxカーネル系も含まれる。すでに悪用が観測されているため早期対応を呼びかけている。"
-hits: "KEVに乗った瞬間に『これは実戦投入されている脆弱性です』と公的に証明される。先輩がOSCPで触るLinux PrivEsc系がここに乗る = 試験で出るかどうかとは別軸で『今攻撃者が使ってる手』として頭に入れる価値がある。CTOとして米連邦の方針に沿った『KEV追従パッチ運用』を社内ポリシーに入れるかどうかも判断材料になる。"
+hits: "CISA KEV掲載の悪用観測脆弱性。パッチ優先度判断の指標。"
 category: "Security"
 ---
 
@@ -20,16 +20,16 @@ KEVに掲載されると、米連邦機関は強制的なパッチ期限が設�
 - パッチ優先度のシグナルとしてグローバルに使われる
 - IPSやEDRのシグネチャ反映が早まる
 
-## 先輩の視点で見ると
+## ポイント
 
-- **OSCP Phase 2-3 のLinux PrivEsc** で触る系の脆弱性がKEVに乗ると、「教科書知識」と「現役の攻撃手段」が直結する。試験対策と実戦感覚が同期する瞬間
-- **Smooth のCloud Run 環境**は Linux ベース。KEV に乗ってる Linux カーネルの脆弱性が、コンテナ脱出（container escape）に使われる系統なら影響範囲を確認すべき
-- **Pentest Agent のテンプレ更新シグナル**としても KEV は使いやすい。週次でCISA RSSを購読、KEV追加があったらNucleiテンプレが対応してるかチェック、という自動化が組める
+- 公開情報として公開された脆弱性/インシデント事例で、実装側・運用側の両面から参考にできる
+- 同種の構造を持つシステムへの横展開リスクを評価する素材として有用
+- セキュリティニュースの定点観測ソースとして継続的にウォッチする価値がある
 
 ## アクション提案
 
 - CISA KEV カタログ: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
-- Smooth 本番環境のホストOS/カーネルバージョンを把握しておくと、KEV追加時に即座に影響有無を判断できる
+- 本番環境のホストOS/カーネルバージョンを把握しておくと、KEV追加時に即座に影響有無を判断できる
 
 ---
 *詳細は[元記事](https://www.security-next.com/185392)を参照してください。*

@@ -1,6 +1,6 @@
-# HackTricks連載カリキュラム（OSCP合格動線）
+# HackTricks連載カリキュラム（OSCP範囲のロードマップ）
 
-毎日1本、30日で網羅。先輩のOSCP進捗（Phase 1-4）に合わせた順序。
+毎日1本、30日で網羅。OSCP範囲（Phase 1-4）に合わせた順序。
 HackTricksをベースに、実際の試験で使えるテクとコマンド例に絞る。
 
 ## Week 1: Enumeration基礎（Phase 1 Easy Linux対応）
@@ -24,7 +24,7 @@ HackTricksをベースに、実際の試験で使えるテクとコマンド例�
 | 010 | SQLi手動（UNION、Blind、Time-based） |
 | 011 | SSRF基礎（cloud metadata、gopher、内部スキャン） |
 | 012 | XXE（OOB、blind、parameter entity） |
-| 013 | Command Injection（先輩のCVE実績ど真ん中、bypass技集） |
+| 013 | Command Injection（bypass技集） |
 | 014 | デシリアライゼーション入門（Python pickle、PHP unserialize） |
 
 ## Week 3: PrivEsc Linux/Windows（Phase 2-3）
@@ -60,8 +60,7 @@ HackTricksをベースに、実際の試験で使えるテクとコマンド例�
 
 ## 書き方の方針
 
-- HackTricksの原文を翻訳しつつ、**先輩の文脈で再構成**
-  - 「先輩のCVEで言うと…」「Smoothの本番環境で言うと…」
+- HackTricksの原文を翻訳しつつ、**実戦で使える形に再構成**
 - 必ず **OSCPの試験で何点稼げるか**の視点を入れる
 - コマンドはコピペで動く形で
 - HTBのマシン名と紐付けて「これはLameで使う」「これはForestで使う」と明示

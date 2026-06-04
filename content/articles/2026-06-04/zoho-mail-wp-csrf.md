@@ -4,7 +4,7 @@ source: "Security NEXT"
 source_url: "https://www.security-next.com/185339"
 published_at: "2026-06-03T04:50:31Z"
 summary: "ZohoのWordPressプラグイン「Zoho Mail for WordPress」にCSRFの脆弱性が確認され、設定改ざんの恐れがあるとしてアップデートが呼びかけられている。"
-hits: "WordPressプラグイン経由の被害は中小・小規模事業者に多い。SmoothのコーポレートサイトでWordPress運用がある場合の点検。"
+hits: "CSRF研究の最新事例。Webアプリ実装の参考に。"
 category: "Security"
 ---
 

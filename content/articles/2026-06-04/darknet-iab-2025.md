@@ -3,8 +3,8 @@ title: "Initial Access Broker 2025: ダークウェブ売買から大型ラン�
 source: "Darknet"
 source_url: "https://www.darknet.org.uk/2025/11/initial-access-brokers-iab-in-2025-from-dark-web-listings-to-supply-chain-ransomware-events/"
 published_at: "2025-11-12T01:00:00Z"
-summary: "IABがダークウェブのアクセス販売を通じてJaguar Land RoverのようなサプライチェーンRansomに繋がる構図を解説。CISOの検知・遮断アクションも示唆。"
-hits: "CISOとしての検知ロードマップ材料。Smoothのアクセス販売リスト（自社/取引先の）監視サービスの是非を考える指標。"
+summary: "IABがダークウェブのアクセス販売を通じてJaguar Land RoverのようなサプライチェーンRansomに繋がる構図を解説。セキュリティ担当の検知・遮断アクションも示唆。"
+hits: "Podcast形式で攻撃者エコシステムを俯瞰できる定点観測ソース。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smoothドメイン・SaaS資産がIAB側にリスト化されていないか確認
+- 組織のドメイン・SaaS資産がIAB側にリスト化されていないか確認
 - 監視サービス導入のROI試算
 
 ---

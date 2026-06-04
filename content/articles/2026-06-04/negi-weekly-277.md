@@ -4,7 +4,7 @@ source: "セキュリティは楽しいかね？ Part 2"
 source_url: "https://negi.hatenablog.com/entry/2026/05/31/220514"
 published_at: "2026-05-31T13:05:14Z"
 summary: "ポッドキャスト『セキュリティのアレ』収録用メモ。イランのインターネット復帰、CrowdStrike等によるGlasswormボットネット停止、沖縄県浦添市の業務用システム被害など、週間の主要トピックを整理。"
-hits: "毎週のキャッチアップ用に超優秀。CISOとして社内週報を出す時のネタ元としてストック。"
+hits: "週次セキュリティニュースまとめ。定点観測ソース。"
 category: "Security"
 ---
 

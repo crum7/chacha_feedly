@@ -4,7 +4,7 @@ source: "Darknet Diaries"
 source_url: "https://darknetdiaries.com/episode/172/"
 published_at: "2026-04-07T07:00:00Z"
 summary: "広告なしで膨大な映像コンテンツが見られるという『便利な箱』が、実は別の顔を持っていた、というストーリー回。ゲストは『D3ada55』。"
-hits: "便利デバイスの裏側を疑う感性は、先輩のIoT(H.VIEW)調査と同根。Smoothのユーザー手元デバイス（駐車場機器）の信頼境界を考える上で示唆あり。"
+hits: "Podcast形式で攻撃者エコシステムを俯瞰できる定点観測ソース。"
 category: "Podcast"
 ---
 

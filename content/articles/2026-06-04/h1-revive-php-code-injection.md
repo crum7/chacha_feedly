@@ -4,7 +4,7 @@ source: "HackerOne"
 source_url: "https://hackerone.com/reports/3656781"
 published_at: ""
 summary: "Revive Adserverの配信制限ロジカル条件処理経由でのPHPコードインジェクション報告。広告配信OSS系の典型的ハイインパクト脆弱性。"
-hits: "OS Command/Code Injection は先輩のCVE実績（Litestar, H.VIEW）と同系統。Bug Bountyの実例として攻撃チェーン理解のネタ。"
+hits: "PHP実装周辺の脆弱性事例。"
 category: "Security"
 ---
 

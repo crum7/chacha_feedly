@@ -4,7 +4,7 @@ source: "piyolog"
 source_url: "https://piyolog.hatenadiary.jp/entry/2025/11/28/170613"
 published_at: "2025-11-28T08:06:13Z"
 summary: "2025年11月、日本経済新聞社の社員私物PCがマルウェアに感染し、保存されていた認証情報が流出。同社の業務用Slackへ不正ログインが発生した。"
-hits: "Smoothでも私物PCからのSlackログインを許している部分がある。BYOD運用とMDM・コンディショナルアクセスの議論に直結する事例。"
+hits: "国内セキュリティベンダのインシデント解説。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- SmoothのSlackログイン端末ポリシー再確認
+- 組織ログイン端末ポリシー再確認
 - Workspace SSO + デバイス信頼ポリシー検討
 
 ---

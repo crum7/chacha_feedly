@@ -4,7 +4,7 @@ source: "Darknet – Hacking Tools, Hacker News & Cyber Security"
 source_url: "https://www.darknet.org.uk/2026/03/mssqland-lightweight-ms-sql-interaction-tool-for-lateral-movement-and-post-exploitation/"
 published_at: "2026-03-24T01:00:00Z"
 summary: "Red Team が制限された環境下で MS-SQL サーバーやリンクドサーバーと対話するための軽量ツール。複雑な T-SQL クエリを書かずに横展開を実現する Assembly ready のツール。"
-hits: "OSCP Phase 3 の Active Directory 攻略で、ドメイン内 MS-SQL サーバが攻撃ベクトルになるパターンがある（HTB の Querier、Resolute など）。Linked Server を辿った横展開は本番試験でも頻出。MSSQLand を頭に入れておくと『どの T-SQL を投げれば良いか』を逆引きで思い出せる教科書になる。"
+hits: "ラテラルムーブメント手法の研究事例。Blue Team観点での検知設計に。"
 category: "Security"
 ---
 
@@ -26,27 +26,16 @@ Windows 系のエンタープライズ環境では MS-SQL Server がドメイン
 - **impersonation** を悪用したサービスアカウント奪取
 - ドメインアカウントでの認証 → そのままドメイン内のリソース取得
 
-## 先輩の視点で見ると
+## ポイント
 
-### OSCP Phase 3（AD）動線として
-
-- HTB の **Querier**（MSSQL → ドメイン奪取）、**Resolute**、**APT** など、AD系マシンで頻繁に登場
-- HackTricks 連載 Day 022-028（AD週）で必ず触れるテーマ
-- 実機で叩く時間がないなら、ツールの存在と T-SQL の代表クエリだけ頭に入れておく
-
-### Smooth / Bug Bounty 観点
-
-- Smooth は Postgres ベースなので直接の影響は薄い
-- ただし顧客環境のセキュリティ診断を受託する可能性が出てきた時に、MS-SQL の知識ゼロだと困る場面はある
-
-### Pentest Agent への応用
-
-- 現状の Smooth Pentest Agent は Web 主体だが、内部ネットワーク侵入後の AD 攻略フェーズを将来追加するなら、こうしたツールの API/CLI ラッパーを実装する形になる
+- 公開情報として公開された脆弱性/インシデント事例で、実装側・運用側の両面から参考にできる
+- 同種の構造を持つシステムへの横展開リスクを評価する素材として有用
+- セキュリティニュースの定点観測ソースとして継続的にウォッチする価値がある
 
 ## アクション提案
 
 - ツール本体 GitHub を後で眺める（10分）
-- HackTricks 連載 Day 023（Kerberoasting）で MSSQL からの取得経路を紹介する時の参考に
+- Web攻撃の学習トピックで MSSQL からの取得経路を紹介する時の参考に
 
 ---
 *詳細は[元記事](https://www.darknet.org.uk/2026/03/mssqland-lightweight-ms-sql-interaction-tool-for-lateral-movement-and-post-exploitation/)を参照してください。*

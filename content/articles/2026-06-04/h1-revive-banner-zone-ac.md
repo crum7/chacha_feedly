@@ -4,7 +4,7 @@ source: "HackerOne Hacker Activity"
 source_url: "https://hackerone.com/reports/3650504"
 published_at: "2026-06-04T11:00:00Z"
 summary: "Revive Adserver で、バナーやキャンペーンをゾーンに紐付ける操作で権限チェックが抜けていた事案の公開レポート。"
-hits: "N対M紐付けエンドポイントで認可漏れが起きるのは王道パターン。Smoothの管理画面で『駐車場×端末』『法人×契約』など対多関係のAPIがある箇所を棚卸す合図になる。"
+hits: "N対M紐付けエンドポイントの典型的な認可漏れ事例。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smooth管理画面のN対M紐付けAPIをリストアップ
+- 管理画面の多対多紐付けAPIの認可チェックを棚卸し
 - HackTricks Day 015 (Broken Access Control) の教材ケースに
 
 ---

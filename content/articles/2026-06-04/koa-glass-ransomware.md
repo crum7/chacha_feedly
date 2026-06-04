@@ -4,7 +4,7 @@ source: "サイバーセキュリティ.com"
 source_url: "https://cybersecurity-jp.com/news/113783"
 published_at: "2026-06-04T01:26:48Z"
 summary: "興亜硝子は2026年5月、社内サーバーの一部が第三者によるサイバー攻撃でランサムウェアにより暗号化される被害を受けたと発表。"
-hits: "製造業の被害が続いている。Smoothのbackup運用とRPO/RTOの議論材料に。"
+hits: "国内ランサムウェア被害の最新事例。インシデント対応の参考に。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- smooth-backendのバックアップ世代と隔離確認
+- 業務アプリのバックアップ世代と隔離確認
 - 復旧訓練の必要性提案
 
 ---

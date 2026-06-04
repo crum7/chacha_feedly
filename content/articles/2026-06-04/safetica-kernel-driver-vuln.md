@@ -4,7 +4,7 @@ source: "ScanNetSecurity"
 source_url: "https://scan.netsecurity.ne.jp/article/2026/06/03/55417.html"
 published_at: "2026-06-02T23:20:03Z"
 summary: "DLP製品Safeticaのカーネルドライバに、任意のプロセスを停止できる脆弱性が判明。EDR/AV killの新たな経路になりうる。"
-hits: "OSCPやペンテスト視点で『BYOVD（脆弱署名済みドライバ持ち込み）』候補の最新事例。Smoothの端末EDRが切られる手口の教材。"
+hits: "カーネルドライバ脆弱性の事例。EDR/AV製品の信頼境界の参考に。"
 category: "Security"
 ---
 
@@ -15,7 +15,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smoothで使うEDR/DLP製品のCVE追跡
+- 利用中のEDR/DLP製品のCVE追跡
 - 検証ラボでドライバ列挙→悪用パターンの理解
 
 ---

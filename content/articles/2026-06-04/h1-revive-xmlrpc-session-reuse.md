@@ -4,7 +4,7 @@ source: "HackerOne"
 source_url: "https://hackerone.com/reports/3672641"
 published_at: ""
 summary: "Revive AdserverでSession ID再利用によりXML-RPC APIの認証バイパスが可能だったという報告。"
-hits: "認証バイパスは先輩のH.VIEW F-11b（CVSS 9.4）と同カテゴリ。セッション管理ミスの典型なのでSmoothのAPI設計レビュー観点として有用。"
+hits: "OSS脆弱性報告の実例。レポーティング手法の参考に。"
 category: "Security"
 ---
 
@@ -14,7 +14,7 @@ category: "Security"
 
 ## アクション提案
 
-- Smooth API のセッション管理（無効化タイミング）レビュー
+- API のセッション管理（無効化タイミング）レビュー
 
 ---
 *詳細は[元記事](https://hackerone.com/reports/3672641)を参照してください。*
